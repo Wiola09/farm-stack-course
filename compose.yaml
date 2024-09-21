@@ -28,6 +28,3 @@ services:
     ports:
       - "8001:3001"
 
-    environment:
-      - DEBUG=true
-      - MONGODB_URI=mongodb://mongo:845d25fbd9f5b7599c46@testiranje_farm-db:27017/testiranje
