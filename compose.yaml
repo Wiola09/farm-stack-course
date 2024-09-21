@@ -35,3 +35,4 @@ services:
     command: "python src/server.py"
     environment:
       - DEBUG=true
+      - MONGODB_URI="mongodb://mongo:"
