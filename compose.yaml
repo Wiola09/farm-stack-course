@@ -35,6 +35,3 @@ services:
     command: "python src/server.py"
     environment:
       - DEBUG=true
-    env_file:
-      - path: ./.env
-        required: true
