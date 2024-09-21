@@ -10,14 +10,10 @@ services:
       - backend
       - frontend
   frontend:
-    image: "node:22"
-    user: "node"
-    working_dir: /home/node/app
+    image: miroslav19/farm_stack:front
     environment:
       - NODE_ENV=development
       - WDS_SOCKET_PORT=0
-    volumes:
-      - ./frontend/:/home/node/app
     expose:
       - "3000"
     ports:
