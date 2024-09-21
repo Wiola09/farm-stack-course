@@ -35,3 +35,4 @@ services:
     command: "python src/server.py"
     environment:
       - DEBUG=true
+      - MONGODB_URI=mongodb://mongo:845d25fbd9f5b7599c46@testiranje_farm-db:27017
