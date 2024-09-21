@@ -16,8 +16,6 @@ services:
       - WDS_SOCKET_PORT=0
     expose:
       - "3000"
-    ports:
-      - "3005:3000"
     command: "npm start"
   backend:
     image: miroslav19/farm_stack:back
@@ -25,8 +23,6 @@ services:
 
     expose:
       - "3001"
-    ports:
-      - "8001:3001"
     environment:
       - DEBUG=true
     env_file:
